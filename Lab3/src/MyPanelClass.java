@@ -53,6 +53,32 @@ public class MyPanelClass extends JPanel {
 //                        g.setColor(Color.BLUE);
 //                        g.fillPolygon(p);
                         
+                        
+                        //white bar
+                        Polygon p3 = new Polygon();
+                        p3.addPoint(x1 , y1 + 25);
+                        p3.addPoint(x1 + 300, y1 + 25);
+                        p3.addPoint(x1 + 300, y1 + 60);
+                        p3.addPoint(x1 , y1 + 60);
+                        g.setColor(Color.WHITE);
+                        g.fillPolygon(p3);
+                        
+                        //2nd white bar
+                        Polygon p4 = new Polygon();
+                        p4.addPoint(x1 , y1 + 100);
+                        p4.addPoint(x1 + 300, y1 + 100);
+                        p4.addPoint(x1 + 300, y1 + 135);
+                        p4.addPoint(x1 , y1 + 135);
+                        g.fillPolygon(p4);
+                        
+                        //triangle
+                        Polygon p = new Polygon();
+                        p.addPoint(x1, y1);
+                        p.addPoint(x1 + 110, y1 + 80);
+                        p.addPoint(x1 + 0, y1 + 160);
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(p);
+                        
                         //star
                         Polygon p2 = new Polygon();
                         p2.addPoint(x1 + 25, y1 + 73);
@@ -67,32 +93,6 @@ public class MyPanelClass extends JPanel {
                         p2.addPoint(x1 + 38, y1 + 83);
                         g.setColor(Color.WHITE);
                         g.fillPolygon(p2);
-                        
-                        //triangle
-                        Polygon p = new Polygon();
-//                      p.addPoint(x1 + 5, y1 + 25);
-//                      p.addPoint(x1 + 20, y1 + 10);
-//                      p.addPoint(x1 + 35, y1 + 25);
-//                      p.addPoint(x1 + 25, y1 + 25);
-//                      p.addPoint(x1 + 25, y1 + 45);
-//                      p.addPoint(x1 + 15, y1 + 45);
-//                      p.addPoint(x1 + 15, y1 + 25);
-//                      g.setColor(Color.BLUE);
-//                      g.fillPolygon(p);
-                        
-                        //white bar
-                        Polygon p3 = new Polygon();
-//                      p.addPoint(x1 + 5, y1 + 25);
-//                      p.addPoint(x1 + 20, y1 + 10);
-                        g.setColor(Color.WHITE);
-                        g.fillPolygon(p3);
-                        
-                        //2nd white bar
-                        Polygon p4 = new Polygon();
-//                      p.addPoint(x1 + 5, y1 + 25);
-//                      p.addPoint(x1 + 20, y1 + 10);
-                        g.setColor(Color.WHITE);
-                        g.fillPolygon(p4);
                         
                         
             }
